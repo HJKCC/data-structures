@@ -1,7 +1,10 @@
 package com.cc.sort;
 
 public class InsertionSort {
-	public static <E extends Comparable<? super E>> void simpleSort(E[] e) {
+	/**
+	 * ºÚµ•≤Â»Î≈≈–Ú£®Œ»∂®£©
+	 */
+	public static <E extends Comparable<? super E>> void simpleSort(E[] e) {		
 		int j;
 		int length = e.length;
 		for (int i = 1; i < length; i++) {
@@ -15,11 +18,15 @@ public class InsertionSort {
 		}
 	}
 	
+	/**
+	 * œ£∂˚≈≈–Ú£®≤ªŒ»∂®£©
+	 * @param e
+	 */
 	public static <E extends Comparable<? super E>> void shellSort(E[] e) {
+		int h, i, j;
 		int length = e.length;
-		int h, j;
 		for (h = length / 2; h > 0; h /= 2) {
-			for (int i = h; i < length; i++) {
+			for (i = h; i < length; i++) {
 				E tmp = e[i];
 				for (j = i; j >= h && tmp.compareTo(e[j - h]) < 0; j -= h) {
 					e[j] = e[j - h];
