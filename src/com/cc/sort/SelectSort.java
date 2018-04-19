@@ -21,7 +21,7 @@ public class SelectSort {
 	}
 	
 	/**
-	 * 堆排序（稳定）
+	 * 堆排序（稳定） O(N*logN)
 	 * @param e
 	 */
 	public static <E extends Comparable<? super E>> void heapSort(E[] e) {
@@ -46,11 +46,15 @@ public class SelectSort {
 	 * @param n 数组长度
 	 */
 	private static <E extends Comparable<? super E>> void percolateDown(E[] e, int i, int length) {
-		int largest = i;
 		int left = 2 * i + 1;
+		if (left >= length) {
+			return;
+		}
+		
+		int largest = i;
 		int right = left + 1;
 		
-		if (left < length && e[largest].compareTo(e[left]) < 0) {
+		if (e[largest].compareTo(e[left]) < 0) {
 			largest = left;
 		}
 		if (right < length && e[largest].compareTo(e[right]) < 0) {

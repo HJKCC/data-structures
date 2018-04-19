@@ -3,6 +3,7 @@ package com.cc.test;
 import java.util.Random;
 
 import com.cc.sort.InsertionSort;
+import com.cc.sort.MergeSort;
 import com.cc.sort.SelectSort;
 import com.cc.sort.SwapSort;
 
@@ -23,7 +24,8 @@ public class TestSort {
 		System.out.println();
 //		InsertionSort.shellSort(test);
 //		SwapSort.bubbleSort(test);
-		SelectSort.heapSort(test);
+//		SelectSort.heapSort(test);
+		MergeSort.sort(test);
 		for (String str : test) {
 			System.out.print(str + ", ");
 		}
