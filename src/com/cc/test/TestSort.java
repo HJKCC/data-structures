@@ -23,7 +23,7 @@ public class TestSort {
 		System.out.println();
 //		InsertionSort.shellSort(test);
 //		SwapSort.bubbleSort(test);
-		SelectSort.simpleSort(test);
+		SelectSort.heapSort(test);
 		for (String str : test) {
 			System.out.print(str + ", ");
 		}
