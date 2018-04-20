@@ -9,7 +9,7 @@ public class SwapSort {
 		for (int i = 1; i < length; i++) {
 			//交换标识
 			boolean flag = true;
-			
+			//依次将较大的元素交换到e[length-1-i]
 			for (int j = 0; j < length - i; j++) {
 				if (e[j].compareTo(e[j + 1]) > 0) {
 					swap(e, j, j + 1);
@@ -24,7 +24,17 @@ public class SwapSort {
 		}
 	}
 	
+	/**
+	 * 快速排序，主方法（不稳定）
+	 * @param e
+	 * @param j 
+	 * @param i 
+	 */
 	public static <E extends Comparable<? super E>> void quickSort(E[] e) {
+		quickSort(e, 0, e.length - 1);
+	}
+	
+	public static <E extends Comparable<? super E>> void quickSort(E[] e, int i, int j) {
 		
 	}
 	

@@ -2,7 +2,7 @@ package com.cc.sort;
 
 public class MergeSort {
 	/**
-	 * 归并排序，主方法
+	 * 归并排序，主方法（稳定）
 	 * @param e
 	 */
 	public static <E extends Comparable<? super E>> void sort(E[] e) {
@@ -42,8 +42,7 @@ public class MergeSort {
 	 */
 	private static <E extends Comparable<? super E>> void merge(E[] srcArray, E[] resArray, int leftPos, int leftEnd, int rightEnd) {
 		int startPos = leftPos;  //save the start postion
-		int endPos = rightEnd;  //save the end postion
-		
+		int endPos = rightEnd;  //save the end postion		
 		int resPos = leftPos;
 		int rightPos = leftEnd + 1;
 		

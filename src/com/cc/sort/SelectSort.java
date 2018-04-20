@@ -8,8 +8,8 @@ public class SelectSort {
 	public static <E extends Comparable<? super E>> void simpleSort(E[] e) {
 		int length = e.length;
 		for (int i = 0; i < length; i++) {
-			int min = i;
-			for (int j = i + 1; j < length; j++) {  //选择剩余未排序序列中最小元素的标识
+			int min = i;   //缓存较小元素的下标
+			for (int j = i + 1; j < length; j++) {  //选择剩余未排序序列中最小元素的下标
 				if (e[min].compareTo(e[j]) > 0) {
 					min = j;
 				}

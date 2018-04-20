@@ -7,11 +7,15 @@ public class InsertionSort {
 	public static <E extends Comparable<? super E>> void simpleSort(E[] e) {		
 		int j;
 		int length = e.length;
-		for (int i = 1; i < length; i++) {
-			E tmp = e[i]; 
-			for (j = i; j >= 1 && tmp.compareTo(e[j - 1]) < 0; j--) {  //将比较元素e[i]逐渐向前插入到已排序序列的合适位置
+		for (int i = 1; i < length; i++) {			
+			E tmp = e[i];   //缓存比较元素值e[i]
+			
+			//将已排序序列元素依次与缓存值tmp 比较
+			for (j = i; j >= 1 && tmp.compareTo(e[j - 1]) < 0; j--) {  
 				e[j] = e[j - 1];
-			}
+			}	
+			
+			//将缓存值tmp赋值给指定元素
 			if (j != i) {
 				e[j] = tmp;
 			}
