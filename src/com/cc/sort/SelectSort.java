@@ -9,7 +9,7 @@ public class SelectSort {
 		int length = e.length;
 		for (int i = 0; i < length; i++) {
 			int min = i;
-			for (int j = i + 1; j < length; j++) {
+			for (int j = i + 1; j < length; j++) {  //选择剩余未排序序列中最小元素的标识
 				if (e[min].compareTo(e[j]) > 0) {
 					min = j;
 				}
