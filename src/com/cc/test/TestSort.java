@@ -24,8 +24,9 @@ public class TestSort {
 		System.out.println();
 //		InsertionSort.shellSort(test);
 //		SwapSort.bubbleSort(test);
+		SwapSort.quickSort(test);
 //		SelectSort.heapSort(test);
-		MergeSort.sort(test);
+//		MergeSort.sort(test);
 		for (String str : test) {
 			System.out.print(str + ", ");
 		}
