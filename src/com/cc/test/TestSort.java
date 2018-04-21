@@ -13,20 +13,18 @@ public class TestSort {
 		String[] test = {"81", "11", "96", "12",
 				"35", "17", "95", "28", 
 				"58", "41", "75", "15"};
-		Random random = new Random();
-		int tmp = random.nextInt(100);
-		System.out.println(tmp);
-		int[] arr = random.ints(10, 10, 100).toArray();
 		
 		for (String str : test) {
 			System.out.print(str + ", ");
 		}
 		System.out.println();
+		
 //		InsertionSort.shellSort(test);
 //		SwapSort.bubbleSort(test);
 		SwapSort.quickSort(test);
 //		SelectSort.heapSort(test);
 //		MergeSort.sort(test);
+		
 		for (String str : test) {
 			System.out.print(str + ", ");
 		}
