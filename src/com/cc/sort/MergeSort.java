@@ -1,5 +1,11 @@
 package com.cc.sort;
 
+/**
+ * 归并排序
+ *
+ * @author chencheng0816@gmail.com 
+ * @date 2018年4月22日 下午3:53:54
+ */
 public class MergeSort {
 	/**
 	 * 归并排序，主方法（稳定）

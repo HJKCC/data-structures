@@ -1,5 +1,11 @@
 package com.cc.sort;
 
+/**
+ * 插入类排序：包含 简单插入排序 和 希尔排序
+ *
+ * @author chencheng0816@gmail.com 
+ * @date 2018年4月22日 下午3:51:58
+ */
 public class InsertionSort {
 	/**
 	 * 简单插入排序（稳定）

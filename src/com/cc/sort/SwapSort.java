@@ -2,6 +2,12 @@ package com.cc.sort;
 
 import java.util.Arrays;
 
+/**
+ * 交换类排序：包含 冒泡排序 和 快速排序
+ *
+ * @author chencheng0816@gmail.com 
+ * @date 2018年4月22日 下午3:55:29
+ */
 public class SwapSort {
 	/**
 	 * 冒泡排序(稳定)

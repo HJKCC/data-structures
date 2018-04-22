@@ -1,5 +1,11 @@
 package com.cc.sort;
 
+/**
+ * 选择类排序：包含 简单选择排序 和 堆排序
+ *
+ * @author chencheng0816@gmail.com 
+ * @date 2018年4月22日 下午3:54:24
+ */
 public class SelectSort {
 	/**
 	 * 简单选择排序（不稳定）
